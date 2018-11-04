@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Productivity App - Control Panel</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light bg-light mb-5">
+                <a class="navbar-brand" href="/">
+                    <img src="i/beetroot_academy.svg">
+                </a>
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="control-panel.html">Control Panel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tasks.html">Tasks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="message-board.html">Message Board</a>
+                    </li>
+        
+                </ul>
+            </nav>
+ </div>
+   
+ 
+ <section id="content-page" class="container content-page">
+    <h1>Control Panel</h1>
+    <p>
+        Welcome, <span id="userName">Jim!</span>
+    </p>
+
+    <form class="form-inline">
+        <input type="text" class="form-control" id="userNameInput" placeholder="Update Your Username">
+    </form>
+
+    <form name="fontSizeForm">
+        <h4>Font size:</h4>
+        <div class="form-check">
+            <input type="radio" name="fontSize" class="form-check-input" id="small" value="small"  checked>
+            <label class="form-check-label" for="small">Small</label>
+        </div>
+        <div class="form-check">
+                <input type="radio" class="form-check-input" name="fontSize" value="large"  id="large">
+                <label class="form-check-label" for="large">Large</label>
+        </div>
+    </form>
+    </form>
+</section>
+
+<script src="assets/cpanel.bundle.js"></script>
+</body>
+</html>

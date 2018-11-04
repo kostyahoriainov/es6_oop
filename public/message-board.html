@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Productivity App - Control Panel</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-expand-md navbar-light bg-light mb-5">
+        <a class="navbar-brand" href="/"><img src="i/beetroot_academy.svg"></a>
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="control-panel.html">Control Panel</a></li>
+            <li class="nav-item"><a class="nav-link" href="tasks.html">Tasks</a></li>
+            <li class="nav-item"><a class="nav-link" href="message-board.html">Message Board</a></li>
+        </ul>
+    </nav>   
+</div>
+
+<section class="container">
+    <h1>Message Board</h1>
+    
+    <div class="card mb-5">
+        <section id="messages" class="card-block"></section>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <form class="form-inline" name="newMessage">
+                <fieldset name="fields">
+                    <input type="text" class="form-control" name="newMessage" placeholder="Type a new message">
+                    <button type="submit" class="btn btn-primary">Say something</button>
+                </fieldset>
+            </form>
+            <form class="form-inline" name="selectStatus">
+                <select name="status" id="" class="custom-select">
+                    <option value="ONLINE">Online</option>
+                    <option value="AWAY">Away</option>
+                    <option value="BUSY">Busy</option>
+                    <option value="OFFLINE">Offline</option>
+                </select>
+            </form>
+        </div> <!-- /.col -->
+    </div> <!-- /.row -->
+
+</section>
+<script src="assets/message-board.bundle.js"></script>
+</body>
+</html>
