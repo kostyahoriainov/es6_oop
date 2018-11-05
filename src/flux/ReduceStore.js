@@ -1,13 +1,13 @@
-import {Store} from './Store'
+import { Store } from "./Store";
 
-export class ReduceStore extends Store {
+export class ReduceStore extends Store{
     constructor(dispatcher) {
         super(dispatcher);
         this.__history = [];
-    }
+    }    
 
     reduce(state, action) {
-        throw new Error ('reduce must be overriden in subclasses')
+        throw new Error('reduce must be overidden in subclasses')
     }
 
     __onDispatch(action) {
@@ -18,7 +18,6 @@ export class ReduceStore extends Store {
             this.__emitChange();
         }
     }
-
     isHistory(){
         return this.__history.length > 0;
     }
