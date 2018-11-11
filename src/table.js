@@ -68,7 +68,6 @@ const render = () => {
     //TODO написать свой render()
     const {players, selectStatus} = store.getState();
     let id = 0;
-    console.log(selectStatus)
     document.getElementById('results').innerHTML = players
         .map(p => {
             let title = getStatus(p.status);
@@ -80,10 +79,12 @@ const render = () => {
         </tr>`})
         .join('');
 
-    document.getElementById('status-select').innerHTML = selectStatus
-        .map(s => `<option value="${s.id}">
-            ${s.title}</option>`)
-        .join('')
+    if (selectStatus.length > 1) {
+        document.getElementById('status-select').innerHTML = selectStatus
+            .map(s => `<option value="${s.id}">
+                ${s.title}</option>`)
+            .join('')
+    }
 }
 
 document.forms.addPlayer.addEventListener('submit', e => {
